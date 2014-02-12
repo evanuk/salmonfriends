@@ -188,6 +188,10 @@ while True:
             coin.kill()
         for bonus in bonus_group:
             bonus.kill()
+        if tsanger:
+            enemy.speedx /= tsangmod
+            enemy.speedy /= tsangmod
+            tsanger = False
         new_game = False
 
     player.update(dt)
